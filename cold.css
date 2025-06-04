@@ -408,7 +408,8 @@ html {
 
   .card__avatar i {
     font-size: 80px;
-    color:#2e8eff ;
+    /* color:#2e8eff ; */
+    color: #2D336B;
   }
 
   #quote {
@@ -424,7 +425,7 @@ html {
 
   .fa-regular {
     margin-top: 40px;
-    color:#004d99
+    /* color:#004d99; */
   }
 
   #quote i {

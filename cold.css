@@ -412,7 +412,7 @@ html {
   }
 
   #quote {
-    margin: 50% 5%;
+    margin: 20% 20%;
     text-align:center;
     max-width: 950px;
     height: 210px;
@@ -485,6 +485,9 @@ html {
     font-size: 20px;
   }
 
+  #quote {
+    margin: 20% 5%;
+  }
   .sales-graph {
       width: 100%;
       padding: 0 10px;

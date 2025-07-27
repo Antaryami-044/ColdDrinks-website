@@ -31,7 +31,7 @@ nav {
 
 .logo {
     color: black; /*ffffff*/
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -99,12 +99,13 @@ nav {
 
 .form {
     --bg-light: #efefef;
-    --bg-dark: #707070;
+    --bg-dark: #4b3535;
     --clr: #58bc82;
     --clr-alpha: #9c9c9c60;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     width: 100%;
     max-width: 300px;
@@ -195,7 +196,7 @@ html {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     gap: 30px;
     padding: 20px;   
 }
@@ -396,7 +397,7 @@ html {
   .items {
     height:90vh;
     width:100%;
-    margin-top: 90px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -413,47 +414,60 @@ html {
   }
 
   #quote {
-    margin: 160px 0 0 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #quote>p{
+    margin: 100px 20% 10px 20%;
     text-align:center;
-    max-width: 950px;
-    height: 250px;
-    font-size: 31px;
+    max-width: 960px;
+    height: 200px;
+    font-size: 30px;
     background-color: #A9B5DF;
     border-radius: 20px;
-    padding-top: 25px;
+    padding-top: 55px;
   }
 
   .fa-regular {
-    margin-top: 40px;
-    /* color:#004d99; */
+    margin-top: 10px;
+    color:#004d99;
+  }
+
+  #emoji {
+    height: 60px;
+    width: 50%;
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
   }
 
   #quote i {
-    margin-right:60px;
     font-size: 50px;
   }
 
-  #quote:hover {
+  #quote>p:hover {
     color:#FFF2F2;
     border:5px solid #2D336B;
   }
 
   #quote i:hover {
-    color:#FFF2F2;
+    color:#00d1dc;
   }
 
 
   /* Mobile responsive styles */
 @media (max-width: 768px) {
   nav {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       padding: 10px;
   }
 
   .nav-links {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       gap: 10px;
   }
@@ -468,6 +482,10 @@ html {
       margin-bottom: 10px;
   }
 
+  #shop {
+    height:50vh;
+  }
+  
   .products {
       flex-direction: column;
       align-items: center;
@@ -492,12 +510,11 @@ html {
       text-align: center;
       padding: 10px;
   }
-}
 
-/* Responsive Enhancements */
-@media (max-width: 768px) {
+/* Responsive Enhancements
+@media (max-width: 768px) { */
   .card {
-    width: 90%;
+    width: 35%;
     height: auto;
   }
 
@@ -516,6 +533,7 @@ html {
     width: 80px;
     height: 80px;
     font-size: 60px;
+    text-align: center;
   }
 
   .card__title {
@@ -532,15 +550,49 @@ html {
     height: 28px;
     font-size: 10px;
   }
+
+  .items {
+    flex-direction: row;
+    align-items: center;
+    overflow: scroll;
+    padding-top: 20px;
+    height:50vh;
+  }
+
+  #quote>p{
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 480px) {
   .items {
     flex-direction: column;
     align-items: center;
+    overflow: scroll;
+    height: 50vh;
+  }
+
+  #shop {
+    height:50vh;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  .items {
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    padding-top: 30px;
+  }
+
+  #quote>p {
+    padding-top: 35px;
+    width: 70%;
   }
 
   .card {
-    width: 95%;
+    width: 65%;
   }
 }

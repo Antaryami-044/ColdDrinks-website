@@ -401,6 +401,7 @@ html {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction:column;
   }
 
   .card {
@@ -511,8 +512,6 @@ html {
       padding: 10px;
   }
 
-/* Responsive Enhancements
-@media (max-width: 768px) { */
   .card {
     width: 35%;
     height: auto;
@@ -551,12 +550,10 @@ html {
     font-size: 10px;
   }
 
-  .items {
+  .items{
     flex-direction: row;
-    align-items: center;
     overflow: scroll;
-    padding-top: 20px;
-    height:50vh;
+    padding-top: 30px;
   }
 
   #quote>p{
@@ -564,7 +561,7 @@ html {
   }
 }
 
-@media (max-width<= 480px) {
+@media (max-width: 480px) {
   .items {
     flex-direction: column;
     align-items: center;
@@ -602,7 +599,7 @@ html {
 
 
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .items {
     flex-direction: row;
     align-items: center;
@@ -611,8 +608,8 @@ html {
   }
 
   #shop {
-    padding-top: 40px;
-    height:60vh;
+    padding-top: 20px;
+    height:70vh;
   }
 
   nav {

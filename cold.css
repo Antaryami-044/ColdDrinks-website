@@ -486,6 +486,7 @@ html {
 
   #shop {
     height:50vh;
+    padding-top: 5px;
   }
   
   .products {
@@ -551,9 +552,11 @@ html {
     font-size: 10px;
   }
 
-  .items{
-    overflow: visible;
-    padding-top: 30px;
+  .items {
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    height: 50vh;
   }
 
   #quote>p{
@@ -567,21 +570,16 @@ html {
     align-items: center;
     overflow: scroll;
     height: 50vh;
+    padding-top: 30px;
   }
 
   #shop {
-    height:50vh;
+    height:60vh;
   }
 
   nav {
     flex-direction: row;
-  }
-
-  .items {
-    flex-direction: column;
-    align-items: center;
-    overflow: scroll;
-    padding-top: 30px;
+    padding-bottom: 10px;
   }
 
   #quote>p {
@@ -594,33 +592,21 @@ html {
   }
 }
 
-
-
-
-
-
 @media (max-width: 360px) {
   .items {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     overflow: auto;
-    height: 60vh;
+    height: 30vh;
   }
 
   #shop {
-    padding-top: 20px;
-    height:70vh;
+    padding-top: 60px;
+    height:110vh;
   }
 
   nav {
     flex-direction: row;
-  }
-
-  .items {
-    flex-direction: column;
-    align-items: center;
-    overflow: scroll;
-    padding-top: 30px;
   }
 
   #quote>p {
@@ -631,5 +617,25 @@ html {
 
   .card {
     width: 60%;
+  }
+}
+
+
+@media (max-height: 867px) {
+  .items {
+    flex-direction: row;
+    align-items: center;
+    overflow: auto;
+    height: 98vh;
+  }
+
+  #quote>p {
+    padding-top: 72px;
+    width: 70%;
+    font-size: 18px;
+  }
+
+  nav {
+    font-size: 5px;
   }
 }
